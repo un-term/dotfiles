@@ -1,0 +1,24 @@
+config:
+  backup: true
+  create: true
+  dotpath: .
+dotfiles:
+  f_mpv:
+    src: config/mpv/mpv.conf
+    dst: ~/.config/mpv/mpv.conf
+  f_fish:
+    src: config/fish/config.fish
+    dst: ~/.config/fish/config.fish
+  f_zathura:
+    src: config/zathura/zathurarc
+    dst: ~/.config/zathura/zathurarc
+profiles:
+  desktop:
+    dotfiles:
+    - f_mpv
+    - f_fish
+    - f_zathura
+  server:
+    dotfiles:
+    - f_fish
+
