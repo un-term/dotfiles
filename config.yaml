@@ -6,18 +6,9 @@ dotfiles:
   f_fish_config:
     src: config/fish/config.fish
     dst: ~/.config/fish/config.fish
-  f_fish_plugins:
-    src: config/fish/fish_plugins
-    dst: ~/.config/fish/fish_plugins
-  d_fish_functions:
-    src: config/fish/functions
-    dst: ~/.config/fish/functions
-  d_fish_completions:
-    src: config/fish/completions
-    dst: ~/.config/fish/completions
-  d_fish_confd:
-    src: config/fish/conf.d
-    dst: ~/.config/fish/conf.d
+  f_fish_prompt:
+    src: config/fish/fish_prompt.fish
+    dst: ~/.config/fish/functions/fish_prompt.fish
   f_mpv:
     src: config/mpv/mpv.conf
     dst: ~/.config/mpv/mpv.conf
@@ -28,17 +19,11 @@ profiles:
   desktop:
     dotfiles:
     - f_fish_config
-    - f_fish_plugins
-    - d_fish_functions
-    - d_fish_completions
-    - d_fish_confd
+    - f_fish_prompt 
     - f_zathura
     - f_mpv
   server:
     dotfiles:
     - f_fish_config
-    - f_fish_plugins
-    - d_fish_functions
-    - d_fish_completions
-    - d_fish_confd
+    - f_fish_prompt 
 
