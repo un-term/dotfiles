@@ -19,7 +19,7 @@ type -q zoxide; and zoxide init fish | source
 
 # Alias/abbr
 # ----------------------------------------------------------------
-alias codium "flatpak run com.vscodium.codium --no-sandbox"
+alias codium "flatpak run com.vscodium.codium --no-sandbox --ozone-platform-hint=auto"
 type -q lsd; and alias ls 'lsd'
 type -q bat; and abbr cat bat
 type -q batcat; and abbr cat batcat
