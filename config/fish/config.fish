@@ -27,8 +27,8 @@ type -q batcat; and abbr cat batcat
 ## helix
 if type -q helix
   alias hx 'helix'
-  set -gx VISUAL hx 
-  set -gx EDITOR hx
+  set -gx VISUAL helix 
+  set -gx EDITOR helix
 end
 
 ## pass
